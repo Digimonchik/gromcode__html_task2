@@ -42,9 +42,11 @@ body {
 }
 .price-card__title {
   position: relative;
+  box-sizing: border-box;
   padding-top: 33px;
   padding-bottom: 33px;
   text-align: center;
+  height: 130px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 20px;
