@@ -6,7 +6,6 @@ body {
   padding-bottom: 115px;
   box-sizing: border-box;
 }
-
 .trapezoid {
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
@@ -28,8 +27,15 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  width: 1176px;
-  justify-content: space-between;
+  width: 1200px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1300px) {
+  .price-cards {
+    flex-direction: column;
+    height: 2400px;
+    width: 360px;
+  }
 }
 
 .price-card {
@@ -39,6 +45,11 @@ body {
   width: 380px;
   height: 770px;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+}
+@media screen and (max-width: 1300px) {
+  .price-card {
+    width: 345px;
+  }
 }
 .price-card__title {
   position: relative;
@@ -123,6 +134,11 @@ body {
   color: white;
   border-radius: 20px;
   margin-left: 112px;
+}
+@media screen and (max-width: 1300px) {
+  .price-card__button {
+    margin-left: 90px;
+  }
 }
 .price-card__button:focus {
   outline: none;
